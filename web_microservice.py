@@ -16,7 +16,7 @@ for flavor in flavors:
 
 #paso-2
 print "Selected image:"
-image_id = '767e8319-bd62-4957-ae41-680f66d129cf'
+image_id = '0e524d47-6b9f-403d-8eeb-d96bb344651d'
 image = conn.get_image(image_id)
 print(image)
 
