@@ -20,6 +20,10 @@ sudo service apache2 restart
 
 #Install Composer
 sudo apt install composer -y
+
+#Install Git
+sudo apt-get install git
+
 composer require php-opencloud/openstack 
 
 wget https://raw.githubusercontent.com/CETHER/Hackathon-OpenStack/master/my-landing-page.html
