@@ -2,7 +2,7 @@
 from shade import *
 
 simple_logging(debug=True)
-conn = openstack_cloud(cloud='rocketraccoon')
+conn = openstack_cloud(cloud='rocket-raccoon')
 
 #lista de imagenes y flavors
 images = conn.list_images()
@@ -28,7 +28,7 @@ print(flavor)
 
 #paso-4 Ejecuta el init para montar servicios en servidor
 ex_userdata = '''#!/usr/bin/env bash
-curl -L -s YOUR_POST_CREATION_SCRIPT | bash -s --
+curl -L -s https://raw.githubusercontent.com/CETHER/Hackathon-OpenStack/master/init.sh | bash -s --
 '''
 
 #paso-5
@@ -51,7 +51,7 @@ else:
     conn.create_security_group_rule(sec_group_name, 80, 80, 'TCP')
 
 #para all in one (SSH) agragar la siguiente linea
-conn.create_security_group_rule(sec_group_name, 22, 22, 'TCP')
+#conn.create_security_group_rule(sec_group_name, 22, 22, 'TCP')
 
 
 #paso 7 creación de instancia
