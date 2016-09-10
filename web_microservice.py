@@ -4,16 +4,6 @@ from shade import *
 simple_logging(debug=True)
 conn = openstack_cloud(cloud='rocket-raccoon')
 
-#lista de imagenes y flavors
-images = conn.list_images()
-for image in images:
-    print(image)
-
-flavors =  conn.list_flavors()
-for flavor in flavors:
-    print(flavor)
-
-
 #paso-2
 print "Selected image:"
 image_id = '0e524d47-6b9f-403d-8eeb-d96bb344651d'
