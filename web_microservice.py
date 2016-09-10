@@ -50,10 +50,6 @@ else:
     conn.create_security_group(sec_group_name, 'network access for a web application.')
     conn.create_security_group_rule(sec_group_name, 80, 80, 'TCP')
 
-#para all in one (SSH) agragar la siguiente linea
-#conn.create_security_group_rule(sec_group_name, 22, 22, 'TCP')
-
-
 #paso 7 creación de instancia
 print "\nServer creation:"
 instance_name = 'ROCKET_RACCOON'
