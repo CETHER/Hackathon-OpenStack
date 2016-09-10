@@ -1,5 +1,5 @@
 <?php 
-  $mysqli = new mysqli( "localhost", "root", "pistones", "pistones" );
+  $mysqli = new mysqli( "localhost", "root", "raccoon", "raccoon" );
   
   if( $mysqli->connect_errno )
   {
