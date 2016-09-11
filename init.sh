@@ -10,8 +10,8 @@ dpkg --get-selections | grep mysql
 
 
 #CreateDB
-mysql -u root -praccoon -e "create database raccoon"
-mysql -u root -praccoon -e "USE raccoon; CREATE TABLE usuarios ( id_usuario int(6) NOT NULL, nombre varchar(50) NOT NULL, email varchar(50) NOT NULL, PRIMARY KEY (id_usuario) ) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+#mysql -u root -praccoon -e "create database raccoon"
+#mysql -u root -praccoon -e "USE raccoon; CREATE TABLE usuarios ( id_usuario int(6) NOT NULL, nombre varchar(50) NOT NULL, email varchar(50) NOT NULL, PRIMARY KEY (id_usuario) ) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
 
 
 #Install php
@@ -22,7 +22,7 @@ sudo service apache2 restart
 sudo apt install composer -y
 
 #Install Git
-sudo apt-get install git
+#sudo apt-get install git
 
 composer require php-opencloud/openstack 
 
